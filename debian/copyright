@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: dvdcopy
-Source: <url://example.com>
+Source: https://github.com/fourmond/dvdcopy 
 
 Files: *
 Copyright: 2006-2013 Vincent Fourmond <fourmond@debian.org>
