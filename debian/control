@@ -1,7 +1,7 @@
 Source: dvdcopy
 Section: video
 Priority: extra
-Maintainer: Benedikt Ahrens <ahrens@o2>
+Maintainer: Benedikt Ahrens <benedikt.ahrens@gmail.com>
 Build-Depends: debhelper (>= 9), autotools-dev, libdvdread-dev
 Standards-Version: 3.9.5
 Homepage: https://github.com/fourmond/dvdcopy
