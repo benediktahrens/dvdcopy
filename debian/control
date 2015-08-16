@@ -1,0 +1,22 @@
+Source: dvdcopy
+Section: video
+Priority: extra
+Maintainer: Benedikt Ahrens <ahrens@o2>
+Build-Depends: debhelper (>= 9), autotools-dev
+Standards-Version: 3.9.5
+Homepage: https://github.com/fourmond/dvdcopy
+Vcs-Git: https://github.com/fourmond/dvdcopy
+#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/dvdcopy.git;a=summary
+
+Package: dvdcopy
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description:  a bad-sectors resistant DVD-to-disc command-line program
+ This program copies the contents of video DVDs to disk using
+ libdvdread. This means it can benefit of the present of libdvdcss on
+ your computer.
+ .
+ This program was designed as a means to view DVDs from public
+ libraries, as those are too scratched to be viewed directly with
+ DVD-playing software such as xine, and must be copied to hard disk
+ first.
