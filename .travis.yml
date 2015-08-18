@@ -3,7 +3,8 @@ before_install: sudo apt-get update -qq
 install:        
   - sudo apt-get install -y build-essential git-buildpackage pbuilder debootstrap devscripts
   - sudo apt-get install debian-archive-keyring
-  - sudo pbuilder create --distribution jessie --mirror ftp://ftp.us.debian.org/debian --debootstrapopts "--keyring=/usr/share/keyrings/debian-archive-keyring.gpg" 
+  - cp .pbuilder $(HOME)
+  - DIST=jessie ARCH=i386 sudo pbuilder create --mirror ftp://ftp.us.debian.org/debian --debootstrapopts "--keyring=/usr/share/keyrings/debian-archive-keyring.gpg" 
 script:
   - gbp buildpackage --git-builder=pbuilder --git-pristine-tar --git-pristine-tar-commit --git-upstream-tag='%(version)s' --git-debian-branch=debian/jessie --git-ignore-new
 after_script:
